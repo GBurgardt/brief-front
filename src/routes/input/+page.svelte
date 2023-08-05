@@ -40,7 +40,8 @@
 
 
 <main class="container">
-  <h1>Pega la URL del video</h1>
+  <h1 style="margin-top: 4rem;">
+    Pega la URL del video</h1>
   <input class="u-full-width" type="text" bind:value={url} placeholder="URL del video de YouTube" />
   <button class="button button-primary" on:click={getSummary} disabled={isLoading}>
     {#if isLoading}
