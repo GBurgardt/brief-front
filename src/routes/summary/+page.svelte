@@ -14,7 +14,7 @@
     });
 
     async function convertHighlights(text) {
-        const apiUrl = 'http://localhost:5001/api/convert-highlights';
+        const apiUrl = 'http://ec2-54-158-67-18.compute-1.amazonaws.com/api/convert-highlights';
         const payload = { text };
         try {
             const response = await fetch(apiUrl, {
@@ -33,7 +33,7 @@
     }
 
     async function convertResume(text) {
-        const apiUrl = 'http://localhost:5001/api/convert-text';
+        const apiUrl = 'http://ec2-54-158-67-18.compute-1.amazonaws.com/api/convert-text';
         const payload = { text };
         try {
             const response = await fetch(apiUrl, {
@@ -118,7 +118,7 @@
     });
 
     async function convertResume(text) {
-        const apiUrl = 'http://localhost:5001/api/convert-text';
+        const apiUrl = 'http://ec2-54-158-67-18.compute-1.amazonaws.com/api/convert-text';
         const payload = { text };
         try {
             const response = await fetch(apiUrl, {

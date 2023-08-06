@@ -14,7 +14,7 @@
 
   async function getSummary() {
     isLoading = true;
-    const apiUrl = 'http://localhost:5001/api/process-audio';
+    const apiUrl = 'http://ec2-54-158-67-18.compute-1.amazonaws.com/api/process-audio';
     const payload = { url };
     try {
       const response = await fetch(apiUrl, {
